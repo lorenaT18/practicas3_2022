@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley de OHM</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+        <body style="background-image: url('http://panamahitek.com/wp-content/uploads/2013/03/SCYS8-1.jpg');">
+            
+            <div class="container mt-3">
+                <div class="row">
+                    <p class="fs-1">Ley de Ohm</p>                  
+                                               
+                    <div class="col-lg-6 mb-3" >
+                        
+                        <select onchange="setearLabel()" id="slt_operacion">
+                            <option selected disabled value="-1">Seleccione operacion</option>
+                            <option value="0">Corriente</option>
+                            <option value="1">Tensión</option>
+                            <option value="2">Resistencia</option>
+                        </select>
+                    </div>
+                    <!--Columna izquierda-->
+                    <div class="col-lg-6 mb-3">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label id="lb_1"></label>
+                                    <input id="inp_d1" class="form-control" type="text" placeholder="Ingresar dato 1">
+                                </div>
+
+                                 <div class="mb-3">
+                                     <label id="lb_2"></label>
+                                    <input id="inp_d2" class="form-control" type="text" placeholder="Ingresar dato 2">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="d-grid gap-2">
+                                <button onclick="calcular()" class="btn btn-primary" type="button">Calcular</button>
+                              </div>
+
+                              <h2 id="h_resultado"></h2>
+                        </div>
+                                          
+                    
+                    
+                    </div>    
+                        
+                   
+                </div>
+                
+                
+            </div>
+            
+
+            <script src="main.js"></script>
+        </body>
+</html>
